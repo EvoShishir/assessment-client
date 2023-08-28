@@ -2,6 +2,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import styles from "../styles/login.module.scss";
 import { useForm } from "react-hook-form";
+import Link from "next/link";
 
 const LoginPage = () => {
   const validationSchema = yup
@@ -85,7 +86,7 @@ const LoginPage = () => {
         <button onClick={handleSubmit(handleLogin)}>Login</button>
         <br />
         <h4>
-          Don&apos;t have an account? <a href="/sign-up">Sign Up</a>
+          Don&apos;t have an account? <Link href="/sign-up">Sign Up</Link>
         </h4>
       </form>
     </div>
