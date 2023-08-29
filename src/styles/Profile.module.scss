@@ -46,3 +46,30 @@
     }
   }
 }
+
+.input {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  transition: border-color 0.3s ease;
+
+  &:focus {
+    outline: none;
+    border-color: #3498db;
+  }
+}
+
+.button {
+  margin-left: 2px;
+  text-decoration: none;
+  border-radius: 5px;
+  background-color: black;
+  padding: 10px;
+  color: white;
+  transition: 0.4s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.646);
+  }
+}
